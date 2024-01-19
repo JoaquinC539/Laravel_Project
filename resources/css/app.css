@@ -60,4 +60,10 @@ tr,td{
 .paginator a{
     padding: 1em;
 }
+.card{
+    min-height: 40rem !important;
+}
+.home{
+    color: aliceblue;
+}
 

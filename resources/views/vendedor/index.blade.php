@@ -5,7 +5,6 @@
 
 
 @section('content')
-    <h1>Vendedor Index</h1>
     
     <form action="{{route('vendedor.index')}}" method="GET">
         @method('GET')

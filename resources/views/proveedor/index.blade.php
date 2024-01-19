@@ -4,7 +4,6 @@
 
 
 @section('content')
-    <h1>Proveedor index</h1>
     
     <div class="card w-100">
         <div class="card-title text-center mb-2">

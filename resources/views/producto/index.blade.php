@@ -4,7 +4,6 @@
 
 
 @section('content')
-    <h1>Producto index</h1>
     
     <div class="card w-100">
         <div class="card-title text-center mb-2">
@@ -19,7 +18,7 @@
             </div>
         </div>
         <br>
-        <div class="card-subtitle">
+        <div class="card-body">
             <form class="form" id="vendedores_filter" method="GET" action="{{route('producto.index')}}" >
                 @method("GET")
                     <div class="row">
