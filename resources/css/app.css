@@ -66,4 +66,9 @@ tr,td{
 .home{
     color: aliceblue;
 }
-
+.navbar-link{
+    color: #0000eeaf !important;
+}
+.navbar-link:hover{
+    color: #006feec9 !important;
+}
