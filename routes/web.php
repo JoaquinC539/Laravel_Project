@@ -24,7 +24,9 @@ Route::get('/', function () {
 
 // Route::get('/vendedor',[VendedorController::class,'index']);
 // Route::get('/vendedor/{id}',[VendedorController::class,'show']);
+
 Route::get('template/{templateName}',[TemplateController::class,'index']);
+Route::get('php/info',[TemplateController::class,'info']);
 Route::get('vendedor/low/{id}',[VendedorController::class,'getQueryLow']);
 Route::get('vendedor/miMetodo',[VendedorController::class,'miMetodo']);
 Route::resource('vendedor',VendedorController::class);

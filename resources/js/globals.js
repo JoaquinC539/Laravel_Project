@@ -13,7 +13,7 @@ export const getTemplate=async (templateName)=>{
         const template=await response['template'];
         return template
     } catch (error) {
-        return json({error:true,failure:error});
+        return {error:true,failure:error};
     }
 }
 export const getData=async (endpoint)=>{

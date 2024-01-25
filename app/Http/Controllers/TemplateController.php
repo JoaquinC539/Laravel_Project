@@ -12,4 +12,8 @@ class TemplateController extends Controller
         return response()->json(['template'=>$template]);
         // return view("templates.tableHeader");
     }
+    public function info(){
+        return view('templates.info');
+    }
+    
 }
