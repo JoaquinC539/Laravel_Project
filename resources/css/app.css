@@ -72,3 +72,14 @@ tr,td{
 .navbar-link:hover{
     color: #006feec9 !important;
 }
+.sub-title{
+    font-size: 1.85em;
+}
+.select2-results__option,
+.select2-results__option--selectable  {
+    color: #000 !important;
+}
+.alert-custom{
+    color: aliceblue;
+    font-size: 1.3em;
+}

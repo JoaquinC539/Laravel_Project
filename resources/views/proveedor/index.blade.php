@@ -19,15 +19,15 @@
         </div>
         @if (!empty($successMessage))
             <div class="row message-container">
-                <div class="col-12 bg-sucesss message">
-                    <p class="text-center" style="color: azure">{{ $successMessage }}</p>
+                <div class="col-12 bg-success message">
+                    <p class="text-center" style="color: azure; font-size:1.3em">{{ $successMessage }}</p>
                 </div>
             </div>
         @endif
         @if (!empty($errorMessage))
             <div class="row message-container">
                 <div class="col-12 bg-danger message">
-                    <p class="text-center" style="color: azure">{{ $errorMessage }}</p>
+                    <p class="text-center" style="color: azure; font-size:1.3em">{{ $errorMessage }}</p>
                 </div>
             </div>
         @endif

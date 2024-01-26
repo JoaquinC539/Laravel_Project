@@ -22,19 +22,19 @@
                 class="fa fa-plus"> </i>Nuevo Vendedor</button></a>
     <br>
     @if (!empty($successMessage))
-        <div class="row message-container">
-            <div class="col-12 bg-sucesss message">
-                <p class="text-center" style="color: azure">{{ $successMessage }}</p>
+            <div class="row message-container">
+                <div class="col-12 bg-success message">
+                    <p class="text-center" style="color: azure; font-size:1.3em">{{ $successMessage }}</p>
+                </div>
             </div>
-        </div>
-    @endif
-    @if (!empty($errorMessage))
-        <div class="row message-container">
-            <div class="col-12 bg-danger message">
-                <p class="text-center" style="color: azure">{{ $errorMessage }}</p>
+        @endif
+        @if (!empty($errorMessage))
+            <div class="row message-container">
+                <div class="col-12 bg-danger message">
+                    <p class="text-center" style="color: azure; font-size:1.3em">{{ $errorMessage }}</p>
+                </div>
             </div>
-        </div>
-    @endif
+        @endif
     <br>
     <table id="miMetodoTable"></table>
 

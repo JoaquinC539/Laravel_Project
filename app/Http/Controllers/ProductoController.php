@@ -55,13 +55,20 @@ class ProductoController extends Controller
     {
         $producto = Producto::find($id);
         $proveedores = Proveedor::all();
-        return view('producto.edit', ["producto" => $producto, 'proveedores' => $proveedores]);
+        $successMessage = $request->session()->get('success');
+        $errorMessage = $request->session()->get('error');
+        return view('producto.edit', [
+            "producto" => $producto,
+            'proveedores' => $proveedores,
+            'successMessage' => $successMessage,
+            'errorMessage' => $errorMessage
+        ]);
     }
     public function store(Request $request)
     {
         try {
             $producto = $this->productoService->store($request);
-            return redirect()->route('producto.edit', $producto->_id)->with('success','Producto guardado con exito');
+            return redirect()->route('producto.edit', $producto->_id)->with('success', 'Producto guardado con exito');
         } catch (\Throwable $th) {
             $error = $th->getMessage();
             return redirect()->route('producto.index')->with('error', 'Hubo un error: ' . $error);

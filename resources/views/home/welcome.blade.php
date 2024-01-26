@@ -24,12 +24,17 @@
               <a class="navbar-brand navbar-link" href="{{route('vendedor.index')}}">Vendedores</a>
               <a class="navbar-brand navbar-link" href="{{route('proveedor.index')}}">Proveedores</a>
               <a class="navbar-brand navbar-link" href="{{route('producto.index')}}">Productos</a>
+              <a class="navbar-brand navbar-link" href="{{route('register')}}">Register</a>        
+            </div>
+          </nav>
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand navbar-link" href="{{route('login')}}">Login</a>              
             </div>
           </nav>
     </div>
+    <br>
     
-    
-
     
 </div>
 
