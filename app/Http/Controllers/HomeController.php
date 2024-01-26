@@ -11,13 +11,23 @@ class HomeController extends Controller
     }
     public function welcome(Request $request)
     {
-
-        return view('home.welcome');
+        $successMessage = $request->session()->get('success');
+        $errorMessage = $request->session()->get('error');
+        return view('home.welcome', [
+            'successMessage' => $successMessage,
+            'errorMessage' => $errorMessage
+        ]);
     }
     public function dashboard(Request $request)
-    {        
+    {
         $user = auth()->user();
-        return view('home.dashboard', [ 'user' => $user]);
+        $successMessage = $request->session()->get('success');
+        $errorMessage = $request->session()->get('error');
+        return view('home.dashboard', [
+            'user' => $user,
+            'successMessage' => $successMessage,
+            'errorMessage' => $errorMessage
+        ]);
     }
 
 }
