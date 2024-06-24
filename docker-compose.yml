@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:  
+  laravel-app:
+    image: laravel-app
+    container_name: laravel-app
+    ports:
+      - "8000:80"
+    networks:
+      - my-network   
+    
+    env_file:
+      - ./.env.prod    
+
+networks:
+  my-network:
+    external: true

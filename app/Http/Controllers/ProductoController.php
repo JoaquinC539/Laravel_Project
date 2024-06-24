@@ -9,6 +9,7 @@ use App\Models\Proveedor;
 
 class ProductoController extends Controller
 {
+    private $productoService;
     public function __construct(ProductoService $productoService)
     {
         $this->productoService = $productoService;
